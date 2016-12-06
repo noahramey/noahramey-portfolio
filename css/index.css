@@ -1,0 +1,123 @@
+body {
+  background: #212121;
+  color: #EDEDED;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: .5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: .3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  background-image: url('../img/background.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#navbar {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+
+#navbar a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+#navbar i {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 48px;
+  display: block;
+  transition: .3s color;
+}
+
+#navbar i:hover {
+  color: #C9C9C9;
+}
+
+#page-header {
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  padding: 20vw 2em;
+}
+
+.fadeInDown {
+  -vendor-animation-duration: 3s;
+}
+
+#page-header h1 {
+  font-family: "Pacifico", cursive;
+  margin-bottom: 0px;
+}
+
+#page-header h1, #page-header h6 {
+  text-align: center;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

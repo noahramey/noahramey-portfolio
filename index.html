@@ -3,12 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Noah Ramey</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+    <div id="main">
+      <nav id="navbar">
+        <a onclick="openNav()" href="#"><i class="material-icons">menu</i></a>
+      </nav>
+      <div id="page-header" class="fadeInDown animated">
+        <h1>Noah Ramey</h1>
+        <h6>Full-Stack Web Developer</h6>
+      </div>
+    </div>
 
-  <script src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.opacity = "0.6";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.opacity = "1";
+      }
+    </script>
   </body>
 </html>
