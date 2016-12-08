@@ -2,6 +2,11 @@ body {
   background: #212121;
   color: #EDEDED;
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  clip: auto;
+  position: absolute;
+  overflow: hidden;
 }
 
 .sidenav {
@@ -40,12 +45,16 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 20px;
   background-image: url('../img/background.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-height: 450px) {
@@ -55,14 +64,19 @@ body {
 
 
 #navbar {
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
   margin: 0;
-  height: 40px;
+  height: 50px;
+  width: 40px;
 }
 
 #navbar a {
   color: #EDEDED;
   text-decoration: none;
+  width: 20px;
 }
 
 #navbar i {
@@ -77,23 +91,20 @@ body {
   color: #C9C9C9;
 }
 
-#page-header {
-  max-width: 100%;
-  min-height: 100%;
-  height: 100%;
-  padding: 20vw 2em;
+.title {
+  text-align: center;
 }
 
 .fadeInDown {
   -vendor-animation-duration: 3s;
 }
 
-#page-header h1 {
+.title h1 {
   font-family: "Pacifico", cursive;
   margin-bottom: 0px;
 }
 
-#page-header h1, #page-header h6 {
+.title h1, .title h6 {
   text-align: center;
 }
 
