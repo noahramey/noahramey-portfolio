@@ -91,7 +91,7 @@ body {
   color: #C9C9C9;
 }
 
-.title {
+.title-area {
   text-align: center;
 }
 
@@ -99,12 +99,18 @@ body {
   -vendor-animation-duration: 3s;
 }
 
-.title h1 {
+.title-area h1 {
   font-family: "Pacifico", cursive;
   margin-bottom: 0px;
+  font-size: 50px;
 }
 
-.title h1, .title h6 {
+.title-area h6 {
+  font-size: 17px;
+  margin-top: -10px;
+}
+
+.title-area h1, .title-area h6 {
   text-align: center;
 }
 
@@ -131,4 +137,13 @@ body {
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+.languages {
+}
+
+.items {
+  float: right;
+  padding-left: 50px;
+  padding-right: 50px;
 }
