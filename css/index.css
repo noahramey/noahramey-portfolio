@@ -10,13 +10,14 @@ body {
 }
 
 .sidenav {
+  background-image: linear-gradient(141deg, #dfd8d8 0%, whitesmoke 71%, white 100%);
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #212121;
+  background-color: whitesmoke;
   overflow-x: hidden;
   padding-top: 60px;
   transition: .5s;
@@ -26,7 +27,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #363636;
   display: block;
   transition: .3s;
 }
@@ -43,107 +44,21 @@ body {
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  background-image: url('../img/background.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
-
-#navbar {
+#nav-menu-show i, #nav-menu-hide i {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-right: 20px;
+  color: whitesmoke;
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 20px;
-  margin: 0;
-  height: 50px;
-  width: 40px;
+  right: 0;
 }
 
-#navbar a {
-  color: #EDEDED;
-  text-decoration: none;
-  width: 20px;
-}
-
-#navbar i {
-  padding-left: 20px;
-  padding-top: 20px;
-  font-size: 48px;
-  display: block;
-  transition: .3s color;
-}
-
-#navbar i:hover {
-  color: #C9C9C9;
-}
-
-.title-area {
-  text-align: center;
-}
-
-.fadeInDown {
-  -vendor-animation-duration: 3s;
-}
-
-.title-area h1 {
-  font-family: "Pacifico", cursive;
-  margin-bottom: 0px;
-  font-size: 50px;
-}
-
-.title-area h6 {
-  font-size: 17px;
-  margin-top: -10px;
-}
-
-.title-area h1, .title-area h6 {
-  text-align: center;
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-.languages {
-}
-
-.items {
-  float: right;
-  padding-left: 50px;
-  padding-right: 50px;
+#nav-menu-hide {
+  display: none;
 }

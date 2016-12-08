@@ -12,33 +12,35 @@
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
       <a href="#">About</a>
       <a href="#">Projects</a>
       <a href="#">Contact</a>
     </div>
-    <div id="main">
-      <div id="navbar">
-        <a onclick="openNav()" href="#"><i class="material-icons">menu</i></a>
+    <section class="hero is-fullheight is-dark is-bold">
+      <div class="hero-head">
+        <a onclick="openNav()" href="#" id="nav-menu-show"><i class="material-icons">menu</i></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="nav-menu-hide"><i class="material-icons">close</i></a>
       </div>
-      <div class="title-area">
-        <h1>Noah Ramey</h1>
-        <h6>Full-Stack Web Developer</h6>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Noah Ramey</h1>
+          <h2 class="subtitle">Full-Stack Web Developer</h2>
+        </div>
       </div>
-      <div class="languages">
-      </div>
-    </div>
+    </section>
 
 
     <script src="js/main.js"></script>
     <script type="text/javascript">
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.opacity = "0.6";
+        document.getElementById("nav-menu-show").style.display = "none";
+        document.getElementById("nav-menu-hide").style.display = "block";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.opacity = "1";
+        document.getElementById("nav-menu-hide").style.display = "none";
+        document.getElementById("nav-menu-show").style.display = "block";
       }
     </script>
   </body>
