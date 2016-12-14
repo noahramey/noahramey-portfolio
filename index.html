@@ -21,26 +21,30 @@
         <a onclick="openNav()" href="#" id="nav-menu-show"><i class="material-icons">menu</i></a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="nav-menu-hide"><i class="material-icons">close</i></a>
       </div>
-      <div class="hero-body">
+      <div class="hero-body" id="herotitle">
         <div class="container">
           <h1 class="title">Noah Ramey</h1>
           <h2 class="subtitle">Full-Stack Web Developer</h2>
+          <h3 class="stack">Node - Express - React</h3>
         </div>
       </div>
     </section>
 
 
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript">
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("nav-menu-show").style.display = "none";
         document.getElementById("nav-menu-hide").style.display = "block";
+        document.getElementById("herotitle").style.marginLeft = "300px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("nav-menu-hide").style.display = "none";
         document.getElementById("nav-menu-show").style.display = "block";
+        document.getElementById("herotitle").style.marginLeft = "0px";
       }
     </script>
   </body>

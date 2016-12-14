@@ -29,7 +29,7 @@ body {
   font-size: 25px;
   color: #363636;
   display: block;
-  transition: .3s;
+  transition: .5s;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
@@ -61,4 +61,13 @@ body {
 
 #nav-menu-hide {
   display: none;
+}
+
+#herotitle {
+  transition: .5s;
+}
+
+.stack {
+  margin-top: -18px;
+  margin-left: 65px;
 }
